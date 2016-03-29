@@ -54,6 +54,6 @@ var server=http.createServer(function(request,response){
     serveStatic(response,cache,absPath);
 });
 
-server.listen(3000,function(){
-    console.log('Server listening on port 3000.');
-})
+server.listen(3002,function(){
+    console.log('Server listening on port 3002.');
+});
