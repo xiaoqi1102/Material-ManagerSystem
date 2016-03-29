@@ -1,0 +1,272 @@
+{
+    "groups": [ "系统" ,"会员" ,"产品","订单","内容发布","医院","合作机构"],
+    "pages": [
+        {
+            "name": "后台主页",
+            "key": "home",
+            "url": "home.html",
+            "group": "系统",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "角色管理",
+            "key": "role",
+            "url": "role/index.html",
+            "group": "系统",
+            "property": {
+                "requireRole": [ "000000000000000A" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "机构管理",
+            "key": "partnerOrg",
+            "url": "partnerOrg/partnerOrg.html",
+            "group": "合作机构",
+            "property": {
+                "requireRole": [ "000000000000000A","0000000000000015","0000000000000014" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "角色编辑",
+            "key": "roleEdit",
+            "url": "role/role.edit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "账号管理",
+            "key": "account",
+            "url": "account/index.html",
+            "group": "系统",
+            "property": {
+                "requireRole": [ "000000000000000A" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "账号编辑",
+            "key": "accountEdit",
+            "url": "account/account.edit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "登录",
+            "key": "login",
+            "url": "login.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "*" ],
+                "allowUser": [ "*" ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "左侧菜单",
+            "key": "leftMenu",
+            "url": "leftMenu.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "*" ],
+                "allowUser": [ "*" ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "营养师管理",
+            "key": "nutritionist",
+            "url": "nutritionist/nutritionist.html",
+            "group": "系统",
+            "property": {
+                "requireRole": [ "000000000000000A","0000000000000014" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "营养师编辑",
+            "key": "nutritionist.edit",
+            "url": "nutritionist/nutritionist.edit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "医生管理",
+            "key": "Doctor",
+            "url": "account/doctor.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "医生编辑",
+            "key": "DoctorEdit",
+            "url": "account/doctorEdit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "会员管理",
+            "key": "member",
+            "url": "member/member.index.html",
+            "group": "会员",
+            "property": {
+                "requireRole": [ "000000000000000A", "0000000000000014", "0000000000000015" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "会员编辑",
+            "key": "memberEdit",
+            "url": "member/member.edit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "会员编辑",
+            "key": "memberEdit",
+            "url": "member/member.edit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "编辑干预记录",
+            "key": "interveneLog",
+            "url": "member/member.interveneLog.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "000000000000000A","0000000000000014","0000000000000015" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "订单管理",
+            "key": "order",
+            "group": "订单",
+            "url": "order/index.html",
+            "property": {
+                "requireRole": [ "0000000000000014" ,"000000000000000A"],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "产品管理",
+            "key": "product",
+            "group": "产品",
+            "url": "product/product.index.html",
+            "property": {
+                "requireRole": [ "0000000000000014" ,"000000000000000A","0000000000000015"],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "产品编辑",
+            "key": "productEdit",
+            "group": "",
+            "url": "product/product.edit.html",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "栏目管理",
+            "key": "column",
+            "group": "内容发布",
+            "url": "contentPublish/column.html",
+            "property": {
+                "requireRole": [ "0000000000000014","000000000000000A","0000000000000015" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "文章管理",
+            "key": "article",
+            "group": "内容发布",
+            "url": "cms/index.html",
+            "property": {
+                "requireRole": [ "0000000000000014","000000000000000A","0000000000000015" ],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "文章编辑",
+            "key": "NewsEdit",
+            "url": "cms/NewsEdit.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "0000000000000001" ],
+                "allowUser": [ ],
+                "denyUser": [  ]
+            }
+        },
+        {
+            "name": "医院管理",
+            "key": "hospital",
+            "group": "医院",
+            "url": "hospital/index.html",
+            "property": {
+                "requireRole": [ "0000000000000014","000000000000000A"],
+                "allowUser": [ ],
+                "denyUser": [ ]
+            }
+        },
+        {
+            "name": "文件上传modal",
+            "key": "fileUpload",
+            "url": "fileUploadModal.html",
+            "group": "",
+            "property": {
+                "requireRole": [ "*" ],
+                "allowUser": [ "*" ],
+                "denyUser": [ ]
+            }
+        }
+    ],
+    "component":{
+        "addPartnerOrgBtn":["adminRoleId","nutritionistManagerRoleId"]
+    }
+}
