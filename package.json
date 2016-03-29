@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/xiaoqi1102/Material-ManagerSystem/issues"
   },
-  "homepage": "https://github.com/xiaoqi1102/Material-ManagerSystem#readme"
+  "homepage": "https://github.com/xiaoqi1102/Material-ManagerSystem#readme",
+  "devDependencies": {
+    "jquery": "^2.2.2",
+    "material-ui": "^0.15.0-alpha.2",
+    "mime": "^1.3.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.1",
+    "webpack": "^1.12.14"
+  }
 }

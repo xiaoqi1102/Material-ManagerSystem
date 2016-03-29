@@ -25,7 +25,6 @@ module.exports = {
             $:"jquery",
             jQuery:'jquery',
             "window.jQuery":"jquery",
-            hasher:'hasher',
             moment:'moment'
         }),
        /* new webpack.HotModuleReplacementPlugin()*/
