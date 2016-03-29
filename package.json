@@ -1,0 +1,19 @@
+{
+  "name": "material",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoqi1102/Material-ManagerSystem.git"
+  },
+  "author": "xiaoqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaoqi1102/Material-ManagerSystem/issues"
+  },
+  "homepage": "https://github.com/xiaoqi1102/Material-ManagerSystem#readme"
+}
