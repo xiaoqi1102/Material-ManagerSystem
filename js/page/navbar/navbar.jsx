@@ -1,10 +1,10 @@
-import React from 'react';
+import React ,{PropTypes,Component} from 'react';
 //import AppBar from 'material-ui/lib/app-bar';
 import {AppBar} from 'material-ui'
-const Navbar =React.createClass({
+export default class  Navbar extends Component{
     handleTap(){
         console.log('tap');
-    },
+    }
     render(){
         return(
             <AppBar
@@ -14,6 +14,7 @@ const Navbar =React.createClass({
             />
         )
     }
-});
-
-export default Navbar;
+}
+Navbar.propTypes={
+    onLeftTap:PropTypes.func.isRequired
+};
