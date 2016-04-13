@@ -4,7 +4,7 @@ import {show_left_menu} from './../../actions';
 export default class  Navbar extends Component{
     handleTap(){
         console.log('tap');
-        console.log(this.props);
+       // console.log(this.props);
         let {dispatch}=this.props;
         dispatch(show_left_menu);
     }
