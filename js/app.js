@@ -12,7 +12,7 @@ class App extends Component{
         const {dispatch,visibleTodos} =this.props;
        return(
            <div>
-               <Navbar onLeftTap={text =>dispatch(showLeftMenu(text))}/>
+               <Navbar onLeftTap={() =>dispatch(showLeftMenu())}/>
                <AddTodo
                    onAddClick={text =>
             dispatch(addTodo(text))
