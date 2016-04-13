@@ -1,15 +1,17 @@
 import React ,{PropTypes,Component} from 'react';
-//import AppBar from 'material-ui/lib/app-bar';
-import {AppBar} from 'material-ui'
+import {AppBar} from 'material-ui';
+import {show_left_menu} from './../../actions';
 export default class  Navbar extends Component{
     handleTap(){
         console.log('tap');
-        this.props.onLeftTap();
+        console.log(this.props);
+        let {dispatch}=this.props;
+        dispatch(show_left_menu);
     }
     render(){
         return(
             <AppBar
-                onLeftIconButtonTouchTap={this.handleTap}
+                onLeftIconButtonTouchTap={this.handleTap.bind(this)}
                 title="Title"
                 iconClassNameRight="muidocs-icon-navigation-expand-more"
             />
@@ -17,5 +19,6 @@ export default class  Navbar extends Component{
     }
 }
 Navbar.propTypes={
-    onLeftTap:PropTypes.func.isRequired
+    isShowLeftMenu:PropTypes.bool.isRequired
 };
+

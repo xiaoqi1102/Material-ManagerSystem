@@ -1,47 +1,5 @@
 /**
  * Created by yzsoft on 16/4/6.
  */
-/*
- * action 类型
- * */
-export const ADD_TODO = 'ADD_TODO';
-export const COMPLETE_TODO = 'COMPLETE_TODO';
-export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
-export const SHOW_LEFT_MENU='SHOW_LEFT_MENU';
-/*
- * 其他的常量
- * */
+export const show_left_menu={type:'show_left_menu'};
 
-export const VisibilityFilters = {
-    SHOW_ALL: 'SHOW_ALL',
-    SHOW_COMPLETED: 'SHOW_COMPLETED',
-    SHOW_ACTIVE: 'SHOW_ACTIVE'
-};
-
-/*
- * action 创建函数
- * */
-
-export function addTodo(text) {
-    return {
-        type: ADD_TODO, text
-    }
-}
-
-export function completeTodo(index) {
-    return {
-        type: COMPLETE_TODO, index
-    }
-}
-
-export function setVisbility(filter) {
-    return {
-        type: SET_VISIBILITY_FILTER, filter
-    }
-}
-
-export function showLeftMenu(blean){
-    return{
-        type:SHOW_LEFT_MENU,blean
-    }
-}

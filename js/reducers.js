@@ -1,46 +1,11 @@
-import { combineReducers } from 'redux'
-import { ADD_TODO, COMPLETE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters,SHOW_LEFT_MENU } from './actions'
-const { SHOW_ALL } = VisibilityFilters;
-
-function visibilityFilter(state = SHOW_ALL, action) {
+let reducer = (state = {isShowLeftMenu: false}, action)=> {
+    let isShow = state.isShowLeftMenu;
     switch (action.type) {
-        case SET_VISIBILITY_FILTER:
-            return action.filter;
+        case 'show_left_menu':
+            return{isShowLeftMenu:!isShow};
         default:
-            return state
+            return state;
     }
-}
+};
 
-function todos(state = [], action) {
-    switch (action.type) {
-        case ADD_TODO:
-            return [
-                ...state,
-                {
-                    text: action.text,
-                    completed: false
-                }
-            ];
-        case COMPLETE_TODO:
-            return [
-                ...state.slice(0, action.index),
-                Object.assign({}, state[action.index], {
-                    completed: true
-                }),
-                ...state.slice(action.index + 1)
-            ];
-        case SHOW_LEFT_MENU:
-            return[
-                ...state
-            ];
-        default:
-            return state
-    }
-}
-
-const todoApp = combineReducers({
-    visibilityFilter,
-    todos
-});
-
-export default todoApp
+export default reducer;
