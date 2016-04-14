@@ -102,7 +102,7 @@ let
                         //todo 暂时注释sessionData的调用
                         //sessionData.removeSessionData();
                         dataStore.handleSession.remove('isLogined');
-                        window.location.href = "index.html";
+                        window.location.href = "../../index.html";
                     }, messageModal.close);
                 } else {
                     //if(status.indexOf("5") == 0)
