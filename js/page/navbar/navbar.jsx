@@ -12,7 +12,7 @@ export default class  Navbar extends Component{
         return(
             <AppBar
                 onLeftIconButtonTouchTap={this.handleTap.bind(this)}
-                title="Title"
+                title="南大菲特"
                 iconClassNameRight="muidocs-icon-navigation-expand-more"
             />
         )
